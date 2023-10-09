@@ -27,7 +27,7 @@ class RegisterFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { //initialized auth object by calling the Firebase Authentication
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
     }

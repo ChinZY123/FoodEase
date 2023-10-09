@@ -167,6 +167,40 @@
                     app:srcCompat="@drawable/baseline_chevron_right_24" />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/containerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView201"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:shapeAppearanceOverlay="@style/Circular"
+                    app:srcCompat="@drawable/baseline_person_pin_24" />
+
+                <TextView
+                    android:id="@+id/textView2901"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="Edit Profile"
+                    android:textColor="#304197"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView1401"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/baseline_chevron_right_24" />
+            </LinearLayout>
+
             <View
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
@@ -209,6 +243,7 @@
 
                     app:srcCompat="@drawable/baseline_chevron_right_24" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

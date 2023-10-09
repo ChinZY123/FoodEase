@@ -257,6 +257,9 @@
             app:destination="@id/eventHistoryFragment"
             app:enterAnim="@anim/slide_in_right"
             app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_profileFragment_to_userUpdateFragment"
+            app:destination="@id/userUpdateFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileInformationFragment"
@@ -283,6 +286,15 @@
             android:id="@+id/action_donationCreateFragment_to_donationListFragment"
             app:destination="@id/donationListFragment"
             app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/userUpdateFragment"
+        android:name="com.example.foodease.ui.user.UserUpdateFragment"
+        android:label="fragment_user_update"
+        tools:layout="@layout/fragment_user_update" >
+        <action
+            android:id="@+id/action_userUpdateFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
 
 </navigation>

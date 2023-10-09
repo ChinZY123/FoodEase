@@ -94,5 +94,9 @@ class ProfileFragment : Fragment() {
             FirebaseAuth.getInstance().signOut()
             findNavController().navigate(R.id.action_profileFragment_to_selectLogin)
         }
+
+        binding.containerEdit.setOnClickListener{
+            findNavController().navigate(R.id.action_profileFragment_to_userUpdateFragment)
+        }
     }
 }
